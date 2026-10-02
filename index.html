@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aman Singh Gosai — Full Stack Developer Portfolio. Specializing in React, Python, and Django.">
+    <meta name="theme-color" content="#0f0f0f">
+    <title>Aman Singh Gosai | Portfolio</title>
+
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= Navbar ================= -->
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo"><span></span></a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ================= Hero Section ================= -->
+        <section id="home" class="hero-section">
+            <div class="hero-container" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 40px;">
+
+                <!-- Left Side -->
+                <div class="hero-content" style="flex: 1; min-width: 300px;">
+
+                    <h3 id="hello-text" style="color: #6366f1; font-size: 1.2rem; margin-bottom: 30px;">Hello, I'm</h3>
+
+                    <h1 id="name-text" style="font-size: 3rem; margin-bottom: 10px; color: #fff;">Aman Singh Gosai</h1>
+
+                    <!-- Automatic Typing Effect Text Container -->
+                    <h2 style="font-size: 1.5rem; color: #a5b4fc; margin-bottom: 20px; min-height: 35px;">
+                        <span id="typing-text"></span><span class="typed-cursor">|</span>
+                    </h2>
+
+                    <p style="color: #9ca3af; font-size: 1rem; line-height: 1.6; margin-bottom: 30px;">
+                        I build responsive and modern websites and applications using
+                        HTML, CSS, JavaScript, React, Python, and Django.
+                    </p>
+
+                    <div class="hero-btns" style="display: flex; gap: 15px; margin-bottom: 25px;">
+                        <button class="btn-primary" type="button" onclick="window.location.href='#contact'">Hire Me</button>
+                        <a class="btn-secondary" href="resume.pdf" download style="padding: 10px 20px; background: transparent; border: 1px solid #4b5563; color: #fff; border-radius: 6px; text-decoration: none;">Download CV</a>
+                    </div>
+
+                    <!-- Social Media Links with Animations & Colors -->
+                    <div class="hero-socials" style="display: flex; gap: 25px; align-items: center;">
+                        <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" class="social-icon-box" style="display: flex; flex-direction: column; align-items: center; text-decoration: none; padding: 8px 12px; border-radius: 8px; background: rgba(255, 255, 255, 0.03);">
+                            <i class="fab fa-github" style="font-size: 1.8rem; color: #ffffff; margin-bottom: 5px;"></i>
+                            <span style="font-size: 0.85rem; font-weight: 500; color: #a5b4fc;">GitHub</span>
+                        </a>
+
+                        <a href="https://instagram.com/your-username" target="_blank" rel="noopener noreferrer" class="social-icon-box" style="display: flex; flex-direction: column; align-items: center; text-decoration: none; padding: 8px 12px; border-radius: 8px; background: rgba(255, 255, 255, 0.03);">
+                            <i class="fab fa-instagram" style="font-size: 1.8rem; color: #e1306c; margin-bottom: 5px;"></i>
+                            <span style="font-size: 0.85rem; font-weight: 500; color: #e1306c;">Instagram</span>
+                        </a>
+
+                        <a href="https://facebook.com/your-username" target="_blank" rel="noopener noreferrer" class="social-icon-box" style="display: flex; flex-direction: column; align-items: center; text-decoration: none; padding: 8px 12px; border-radius: 8px; background: rgba(255, 255, 255, 0.03);">
+                            <i class="fab fa-facebook" style="font-size: 1.8rem; color: #1877f2; margin-bottom: 5px;"></i>
+                            <span style="font-size: 0.85rem; font-weight: 500; color: #1877f2;">Facebook</span>
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Right Side (Floating Image Animation) -->
+                <div class="hero-image" style="flex: 1; display: flex; justify-content: center; min-width: 280px;">
+                    <div class="img-container" style="width: 320px; height: 320px; border-radius: 50%; overflow: hidden; border: 4px solid #6366f1; box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);">
+                      <img src="profilepic.jpg" alt="Portrait of Aman Singh Gosai" style="width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block;" loading="eager">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= About Section ================= -->
+        <section id="about" class="about-section">
+            <div class="about-container">
+
+                <h2 class="section-title">
+                    About <span>Me</span>
+                </h2>
+
+                <p class="section-subtitle">
+                    Get to know more about me, my background, and what drives me.
+                </p>
+
+                <div class="about-content">
+
+                    <!-- Left Text Card -->
+                    <div class="about-text-card">
+                        <h3>Who am I?</h3>
+                        <p>
+                           Hi, <strong>Aman Singh Gosai</strong>, a Computer Science Engineering student and a creative music artist from Uttarakhand, currently based in Punjab. I’m passionate about web development, music production, and creative digital projects.
+
+<p>I enjoy building modern websites and applications while continuously improving my skills in HTML, CSS, JavaScript, React, Django, and MySQL. Alongside technology, I’m also a singer and music producer, creating music inspired by my Pahadi roots and modern sounds.</p>
+
+                     </p>
+                       <p> I’m always interested in learning new technologies, creating meaningful projects, and turning ideas into something real</p>
+                    </div>
+
+                    <!-- Right Stats Grid -->
+                    <div class="about-stats-grid">
+                        <div class="stat-box">
+                            <h3>1+</h3>
+                            <p>Years of Experience</p>
+                        </div>
+
+                        <div class="stat-box">
+                            <h3>10+</h3>
+                            <p>Completed Projects</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= Skills Section ================= -->
+        <section id="skills" class="skills-section">
+
+            <div class="skills-container">
+
+                <h2 class="section-title">
+                    My <span>Skills</span>
+                </h2>
+
+                <p class="section-subtitle">
+                    Here are some of the technologies and tools I work with:
+                </p>
+
+                <div class="skills-grid">
+
+                    <div class="skill-card">
+                        <h3>Frontend Development</h3>
+                        <div class="skill-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>React.js</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>Backend Development</h3>
+                        <div class="skill-tags">
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>REST APIs</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>Tools & Others</h3>
+                        <div class="skill-tags">
+                            <span>Git & GitHub</span>
+                            <span>VS Code</span>
+                            <span>FL Studio</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= Certificates Section ================= -->
+        <section id="certificates" class="projects-section" style="padding-top: 120px;">
+            <div class="projects-container">
+
+                <h2 class="section-title">
+                    My <span>Certificates</span>
+                </h2>
+
+                <p class="section-subtitle">
+                    Professional licenses, courses, and credentials I have earned.
+                </p>
+
+                <div class="projects-grid">
+                    
+                    <!-- Certificate Card 1 -->
+                    <div class="project-card">
+                        <div style="width: 100%; height: 240px; background-color: #111; overflow: hidden;">
+                            <img src="certificate.png" alt="Full Stack Python Certificate" style="width: 100%; height: 100%; object-fit: fill; display: block;" loading="lazy">
+                        </div>
+
+                        <div class="project-info">
+                            <h3>Full Stack using Python</h3>
+                            <p>Issued by: The Falcon Technology • July 2026</p>
+
+                            <div class="project-links">
+                                <a href="certificate 2.jpg" target="_blank" rel="noopener noreferrer">View Certificate</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certificate Card 2 -->
+                    <div class="project-card">
+                        <div style="width: 100%; height: 240px; background-color: #111; overflow: hidden;">
+                            <img src="certificate 2.jpg" alt="Certificate Two Preview" style="width: 100%; height: 100%; object-fit: fill; display: block;" loading="lazy">
+                        </div>
+                        <div class="project-info">
+                            <h3>Google Cloud</h3>
+                            <p>Issued by: Organization Name • Feb 2026</p>
+                            <div class="project-links">
+                                <a href="certificate 2.jpg" target="_blank" rel="noopener noreferrer">View Certificate</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= Projects Section ================= -->
+        <section id="projects" class="projects-section">
+
+            <div class="projects-container">
+
+                <h2 class="section-title">
+                    My <span>Projects</span>
+                </h2>
+
+                <p class="section-subtitle">
+                    A selection of things I've built recently.
+                </p>
+
+                <div class="projects-grid">
+
+                    <div class="project-card">
+                        <img src="project1.jpg" alt="Screenshot of Project One" loading="lazy" width="400" height="240">
+                        <div class="project-info">
+                            <h3>Project One</h3>
+                            <p>Short description of what this project does and the problem it solves.</p>
+                            <div class="skill-tags">
+                                <span>React</span>
+                                <span>Django</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                                <a href="#" target="_blank" rel="noopener noreferrer">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="project2.jpg" alt="Screenshot of Project Two" loading="lazy" width="400" height="240">
+                        <div class="project-info">
+                            <h3>Project Two</h3>
+                            <p>Short description of what this project does and the problem it solves.</p>
+                            <div class="skill-tags">
+                                <span>JavaScript</span>
+                                <span>REST APIs</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                                <a href="#" target="_blank" rel="noopener noreferrer">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="project3.jpg" alt="Screenshot of Project Three" loading="lazy" width="400" height="240">
+                        <div class="project-info">
+                            <h3>Project Three</h3>
+                            <p>Short description of what this project does and the problem it solves.</p>
+                            <div class="skill-tags">
+                                <span>Python</span>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                                <a href="#" target="_blank" rel="noopener noreferrer">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= Contact Section ================= -->
+        <section id="contact" class="contact-section">
+
+            <div class="contact-container">
+
+                <h2 class="section-title">
+                    Get In <span>Touch</span>
+                </h2>
+
+                <p class="section-subtitle">
+                    Have a project in mind or just want to say hi? Send me a message.
+                </p>
+
+                <div class="contact-content">
+
+                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/mdekrjpv" method="POST">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+
+                    <div class="contact-info">
+                        <p><strong>Email:</strong> aman@example.com</p>
+                        <p><strong>Location:</strong> India</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ================= Footer ================= -->
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> Aman Singh Gosai. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript File Link -->
+    <script src="script.js"></script>
+</body>
+
+</html>
